@@ -1,0 +1,6 @@
+
+interface Ovipar {
+
+	void posarOus();
+
+}
