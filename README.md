@@ -1,5 +1,20 @@
-# A7b - Classes Abstractes i Interfícies
+# M03 A7b Classes Abstractes i Interfícies
 
-1. Fes els canvis pertinents perquè tant la classe Animal com les tres classes filles (Terrestre, Aquàtic i Aeri) siguin abstractes.
-2. Crea dues interfícies que puguin ser implementades per alguns animals (com ara: ovípar).
-3. Crea un array d’animals i fes que pugui ser ordenat (amb un Arrays.sort) segons els criteris que consideris adients.
+## Animals
+
+Aquest és un petit programa Java que demostra com ordenar una llista d'objectes de la classe `Animal` segons el seu pes, de major a menor.
+
+## Com funciona?
+
+El programa consta d'una classe principal `Tester` que conté el mètode `main`. En aquest mètode, s'inicialitzen diversos objectes de la classe `Animal` i les seves subclasses com:
+
+- `Animal` (abstracta)
+  - `Aeri` (abstracta)
+    - `Aliga` (implements Ovipar, Habitat)
+  - `Aquatic` (abstracta)
+    - `Dofi` (implements Ovipar, Habitat)
+  - `Terrestre` (abstracta)
+    - `Lleona` (implements Ovipar, Habitat)
+
+```java
+Arrays.sort(arrayAnimals);

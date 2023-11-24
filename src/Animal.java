@@ -1,5 +1,5 @@
 
-public class Animal implements Comparable<Animal> {
+abstract class Animal implements Comparable<Animal> {
 
 	// PROPIEDADES
 	protected String nom;
