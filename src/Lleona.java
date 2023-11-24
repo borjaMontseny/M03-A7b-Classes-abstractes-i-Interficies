@@ -1,5 +1,5 @@
 
-public class Lleona extends Terrestre {
+public class Lleona extends Terrestre implements Habitat {
 
 	// PROPIEDADES
 
@@ -15,6 +15,12 @@ public class Lleona extends Terrestre {
 
 	void llepar() {
 		System.out.println(this.nom + " t'esta llepant la cara");
+	}
+
+	@Override
+	public void mostrarHabitat() {
+		System.out.println(this.nom + " es originaria de la sabana africana.");
+
 	}
 
 }

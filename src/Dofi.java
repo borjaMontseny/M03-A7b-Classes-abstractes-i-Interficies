@@ -1,5 +1,5 @@
 
-public class Dofi extends Aquatic {
+public class Dofi extends Aquatic implements Habitat {
 
 	// PROPIEDADES
 
@@ -11,6 +11,12 @@ public class Dofi extends Aquatic {
 	// MÉTODOS
 	void fesSo() {
 		System.out.println("Xiulet de dofi");
+	}
+
+	@Override
+	public void mostrarHabitat() {
+		System.out.println(this.nom + " es originari de el ocea pacific.");
+
 	}
 
 }

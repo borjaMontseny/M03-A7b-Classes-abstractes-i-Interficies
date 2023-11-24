@@ -1,5 +1,5 @@
 
-public class Animal {
+public class Animal implements Comparable<Animal> {
 
 	// PROPIEDADES
 	protected String nom;
@@ -48,6 +48,17 @@ public class Animal {
 	@Override
 	public String toString() {
 		return "nom: " + nom + ", edat: " + edat + ", pes: " + pes;
+	}
+
+	@Override
+	public int compareTo(Animal altreAnimal) {
+		// Ordre de pes de major a menor
+		if (this.pes > altreAnimal.pes) {
+			return -1;
+		} else if (this.pes < altreAnimal.pes) {
+			return 1;
+		}
+		return 0;
 	}
 
 }

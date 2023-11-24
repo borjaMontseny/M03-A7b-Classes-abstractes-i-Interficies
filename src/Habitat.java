@@ -1,0 +1,6 @@
+
+interface Habitat {
+
+	void mostrarHabitat();
+
+}
